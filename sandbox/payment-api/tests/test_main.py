@@ -55,9 +55,7 @@ def _patch_downstream(monkeypatch, calls=None, **kwargs):
 def test_health_returns_200():
     response = client.get("/health")
 
-    # Deliberate regression reproducing the ci-test-regression fault
-    # fixture, so Helix's fix PR has a real diff to show.
-    assert response.status_code == 999
+    assert response.status_code == 200
     assert response.json() == {"status": "ok"}
 
 
