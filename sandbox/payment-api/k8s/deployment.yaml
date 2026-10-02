@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-api
+spec:
+  template:
+    spec:
+      containers:
+      - name: payment-api
+        resources:
+          limits:
+            memory: 256Mi
