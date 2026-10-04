@@ -49,3 +49,4 @@ rollout are triggered against this image's Kubernetes deployment manifests,
 which are a later 1.2 deliverable - not part of the application code itself.
 
 Note: payments are idempotent per request id.
+Retries reuse the same request id.
