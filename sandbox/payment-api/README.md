@@ -47,3 +47,5 @@ Each feature exists to serve a specific fault in the 1.2 catalogue:
 Bad deployment config, CrashLoopBackOff/OOMKilled reproduction, and failed
 rollout are triggered against this image's Kubernetes deployment manifests,
 which are a later 1.2 deliverable - not part of the application code itself.
+
+Health checks hit /health every 10 seconds.
